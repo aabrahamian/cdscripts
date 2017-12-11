@@ -1,5 +1,5 @@
 test_pattern:
-      - ./**.sh
+      - ./*.sh
 tests:
   - type: custom
      command: sleep_20.sh
