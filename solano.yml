@@ -1,0 +1,19 @@
+test_pattern:
+      - **.sh
+tests:
+  - type: custom
+     command: sleep_20.sh
+     invocation: single
+     output: exit-status
+  - type: custom
+     command: sleep_param.sh 5
+     invocation: single
+     output: exit-status
+  - type: custom
+     command: flakey.sh
+     invocation: single
+     output: exit-status
+  - type: custom
+     command: countdown.sh
+     invocation: single
+     output: exit-status
