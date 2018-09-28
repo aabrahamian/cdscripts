@@ -2,7 +2,7 @@
 
 # testing the timeout capabilities of CI tools
 #  I have a hunch that the timeout won't actually be able to interrupt this script and that is the problem I'm running into
-echo "START"
+echo "START TIMEOUT_TEST"
 
 while : ; do
   # grab current state
@@ -13,4 +13,4 @@ while : ; do
   sleep 15
 done
 
-echo "END"
+echo "END TIMEOUT_TEST"
