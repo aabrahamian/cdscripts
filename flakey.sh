@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 echo "flakey job"
 RANDOM_NUMBER=$RANDOM
 echo "random number: $RANDOM_NUMBER"

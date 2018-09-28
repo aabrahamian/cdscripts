@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 echo "test with random sleep time (2-30 seconds) here"
 RANDOM_NUMBER=$RANDOM
 echo "random number: $RANDOM_NUMBER"

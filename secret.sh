@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 echo "looking for SECRET env variable"
 
 if [ -z ${SECRET+x} ]; then 

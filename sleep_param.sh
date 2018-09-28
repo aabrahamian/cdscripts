@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 echo "sleep time provided as param"
 
 if [[ $# -eq 0 ]] ; then
