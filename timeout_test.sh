@@ -8,6 +8,13 @@ while : ; do
   # grab current state
   STATE=$(curl --insecure -sS "http://www.mocky.io/v2/5bae71482e00006700bb4246?mocky-delay=1000ms" | jq --raw-output '.executionState')
   echo "TIMEOUT_TEST_SCRIPT: Current state is $STATE"
+  if [ "$STATE" = "Successful" ] || [ "$STATE" = "SUCCESSFUL" ] || [ "$STATE" = "SUCCEEDED" ]; then
+    echo "TIMEOUT_TEST_SCRIPT: Successful"
+    exit 0
+  elif [ "$STATE" = "Failed" ] || [ "$STATE" = "FAILED" ]; then
+    echo "TIMEOUT_TEST_SCRIPT: Failed"
+    exit 1
+  fi
 
   # sleep for 15 seconds before checking again
   sleep 15
