@@ -1,4 +1,4 @@
-#/bin/bash 
+#!/bin/bash 
 echo "printing out all args passed to this script"
  
 # store arguments in a special array 
